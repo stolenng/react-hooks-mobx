@@ -1,5 +1,6 @@
 import React, {KeyboardEvent, useState} from 'react';
 import {useStore} from "../stores/helpers/use-store";
+import {onEnterPress} from "../hooks/use-enter";
 
 export const TodoNew = () => {
     const [newTodo, setTodo] = useState('');
@@ -10,15 +11,10 @@ export const TodoNew = () => {
         setTodo('');
     };
 
-    const onEnterPress = (e: KeyboardEvent) => {
-        if (e.key === 'Enter') {
-            addTodo();
-        }
-    }
 
     return (
-        <div>
-            <input type="text" value={newTodo} onKeyDown={onEnterPress} onChange={(e) => setTodo(e.target.value)}/>
+        <div className="todo-new">
+            <input type="text" value={newTodo} onKeyDown={onEnterPress(addTodo)} onChange={(e) => setTodo(e.target.value)}/>
             <button onClick={addTodo}>Add Todo</button>
         </div>
     )

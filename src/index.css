@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding:15px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,31 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.todo-new {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.todo-new button {
+  font-size: 15px;
+}
+.todo-new input {
+  margin-right: 15px;
+}
+
+.todo-item {
+  font-size: 20px;
+}
+
+.todo-item span {
+  width: 350px;
+  text-align: left;
+  display: inline-block
+}
+
+.todo-item input {
+  margin-left: 15px;
+  margin-right: 15px;
 }
