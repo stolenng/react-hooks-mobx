@@ -1,5 +1,7 @@
 ## React Hooks + Mobx Guide
 
+Link to Example: http://www.react-hooks-mobx.georgy-glezer.com <br/>
+Link to detailed guide: <https://medium.com/@georgyglezer/react-hooks-mobx-todolist-c138eb4f3d04?sk=304b583e5d578c3bd5fcd12ad8663a50>
 
 
 
