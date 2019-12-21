@@ -1,4 +1,4 @@
-import {action, observable} from "mobx";
+import {action, computed, observable} from "mobx";
 import TodoItem from "./todo-item";
 
 export class TodoList {
@@ -17,4 +17,14 @@ export class TodoList {
     removeTodo = (todo: TodoItem) => {
         this.list.splice(this.list.indexOf(todo), 1);
     };
+
+    @computed
+    get finishedTodos(): TodoItem[] {
+        return this.list.filter(todo => todo.isDone);
+    }
+
+    @computed
+    get openTodos(): TodoItem[] {
+        return this.list.filter(todo => !todo.isDone);
+    }
 }

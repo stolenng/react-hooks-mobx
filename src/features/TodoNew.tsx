@@ -1,6 +1,6 @@
-import React, {KeyboardEvent, useState} from 'react';
-import {useStore} from "../stores/helpers/use-store";
-import {onEnterPress} from "../hooks/use-enter";
+import React, {useState} from 'react';
+import {useStore} from "../helpers/use-store";
+import {onEnterPress} from "../helpers/use-enter";
 
 export const TodoNew = () => {
     const [newTodo, setTodo] = useState('');
@@ -10,7 +10,6 @@ export const TodoNew = () => {
         todoList.addTodo(newTodo);
         setTodo('');
     };
-
 
     return (
         <div className="todo-new">

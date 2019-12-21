@@ -35,6 +35,10 @@ code {
   display: inline-block
 }
 
+.open-todos {
+  margin-bottom: 30px;
+}
+
 .todo-item input {
   margin-left: 15px;
   margin-right: 15px;

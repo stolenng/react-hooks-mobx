@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {StoreProvider} from "./stores/helpers/store-provider";
+import {StoreProvider} from "./helpers/store-provider";
 import {TodoList} from "./stores/todo-list";
 
 const todoList = new TodoList([

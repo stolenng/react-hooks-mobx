@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 import TodoItemClass  from "../stores/todo-item";
-import {useStore} from "../stores/helpers/use-store";
-import {onEnterPress} from "../hooks/use-enter";
+import {useStore} from "../helpers/use-store";
+import {onEnterPress} from "../helpers/use-enter";
 
 interface Props {
     todo: TodoItemClass;
 }
 
 export const TodoItem = ({todo}: Props) => {
+    const todoList = useStore();
     const [newText, setText] = useState('');
     const [isEditing, setEdit] = useState(false);
-    const todoList = useStore();
 
     const saveText = () => {
       todo.updateText(newText);
