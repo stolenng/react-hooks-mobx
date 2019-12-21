@@ -12,4 +12,9 @@ export class TodoList {
     addTodo = (text: string) => {
         this.list.push(new TodoItem(text));
     }
+
+    @action
+    removeTodo = (todo: TodoItem) => {
+        this.list.splice(this.list.indexOf(todo), 1);
+    };
 }

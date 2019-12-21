@@ -14,4 +14,9 @@ export default class TodoItem {
     toggleIsDone = () => {
         this.isDone = !this.isDone
     }
+
+    @action
+    updateText = (text: string) => {
+        this.text = text;
+    }
 }

@@ -12,6 +12,9 @@ const todoList = new TodoList([
     'Should Watch Once Piece :)'
 ]);
 
+//@ts-ignore - for debugging
+window.todoList = todoList
+
 ReactDOM.render(
     <StoreProvider value={todoList}>
         <App/>
