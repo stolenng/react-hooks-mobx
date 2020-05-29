@@ -3,7 +3,17 @@
 Link to Example: http://www.react-hooks-mobx.georgy-glezer.com <br/>
 Link to detailed guide: <https://medium.com/@georgyglezer/react-hooks-mobx-todolist-c138eb4f3d04?sk=304b583e5d578c3bd5fcd12ad8663a50>
 
+# Build Stats
 
+```
+
+File sizes after gzip:
+
+  54.13 KB  build\static\js\2.f209cf74.chunk.js
+  1.46 KB   build\static\js\main.2336ad02.chunk.js
+  779 B     build\static\js\runtime-main.bae833a8.js
+  656 B     build\static\css\main.1b00465a.chunk.css
+```
 
 
 
