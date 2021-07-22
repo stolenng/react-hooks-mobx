@@ -1,7 +1,7 @@
 import React from 'react';
 import {useStore} from "../helpers/use-store";
 import {TodoItem} from "./TodoItem";
-import {useObserver} from "mobx-react-lite";
+import {useObserver} from "mobx-react";
 
 export const TodoList = () => {
     const todoList = useStore();

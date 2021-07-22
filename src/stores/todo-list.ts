@@ -1,10 +1,11 @@
-import {action, computed, observable} from "mobx";
+import {action, computed, makeObservable, observable} from "mobx";
 import TodoItem from "./todo-item";
 
 export class TodoList {
     @observable.shallow list: TodoItem[] = [];
 
     constructor(todos: string[]) {
+        makeObservable(this);
         todos.forEach(this.addTodo);
     }
 

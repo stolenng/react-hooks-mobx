@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "mobx": "^5.15.1",
-    "mobx-react-lite": "^1.5.2",
+    "mobx": "^6.3.2",
+    "mobx-react": "^7.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"

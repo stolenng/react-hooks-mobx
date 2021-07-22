@@ -1,4 +1,4 @@
-import {action, observable} from "mobx";
+import {action, makeObservable, observable} from "mobx";
 
 export default class TodoItem {
     id = Date.now();
@@ -7,6 +7,7 @@ export default class TodoItem {
     @observable isDone: boolean = false;
 
     constructor(text: string) {
+        makeObservable(this);
         this.text = text;
     }
 
